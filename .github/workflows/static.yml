@@ -25,7 +25,10 @@ jobs:
   test-file:
     runs-on: ubuntu-latest
     steps:
-      - run: node script.js
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Test
+        run: node script.js
       
   # Single deploy job since we're just deploying
   deploy:
