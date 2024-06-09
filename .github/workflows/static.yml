@@ -22,6 +22,11 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  test-file:
+    runs-on: ubuntu-latest
+    steps:
+      - run: node script.js
+      
   # Single deploy job since we're just deploying
   deploy:
     environment:
