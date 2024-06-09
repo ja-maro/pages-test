@@ -27,6 +27,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: ls
+        run: ls
       - name: Test
         run: node script.js
       
