@@ -3,5 +3,6 @@ body {
 }
 
 .title {
-  color: dark-blue;
+  color: brown;
+  text-decoration-line: underline;
 }
