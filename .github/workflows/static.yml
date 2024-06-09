@@ -30,7 +30,7 @@ jobs:
       - name: ls
         run: ls
       - name: Test
-        run: node script.js
+        run: node test.js
       
   # Single deploy job since we're just deploying
   deploy:
